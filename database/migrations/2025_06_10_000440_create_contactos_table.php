@@ -9,10 +9,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('contactos', function (Blueprint $table) {
-            $table->id(); // ID autoincremental
-            $table->string('nombre'); // Nombre
-            $table->bigInteger('telefono'); // Teléfono
-            $table->date('fecha_nacimiento'); // Fecha de nacimiento
+            $table->id(); // EL id ya es auto incremental
+            $table->string('nombre'); 
+            $table->bigInteger('telefono'); 
+            $table->date('fecha_nacimiento'); 
             $table->timestamps();
         });
     }
